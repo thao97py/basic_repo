@@ -1,0 +1,40 @@
+$ cd /c/
+$ git clone https://github.com/thao97py/basic_repo.git
+Cloning into 'basic_repo'...
+warning: You appear to have cloned an empty repository.
+$ cd basic_repo
+$ touch readMe.txt
+$ vi readMe.txt
+$ touch aboutMe.txt
+$ vi aboutMe.txt
+$ git add .
+$ git commit -m "added 2 new file readMe.txt and aboutMe.txt"
+[master (root-commit) 1a6d093] added 2 new file readMe.txt and aboutMe.           txt
+ 2 files changed, 2 insertions(+)
+ create mode 100644 aboutMe.txt
+ create mode 100644 readMe.txt
+$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 379 bytes | 189.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/thao97py/basic_repo.git
+ * [new branch]      master -> master
+$ vi readMe.txt
+$ vi aboutMe.txt
+$ touch math.txt
+$ vi math.txt
+$ git add .
+$ git commit -m "made some changes and updated"
+[master a6415da] made some changes and updated
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 math.txt
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 586 bytes | 195.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/thao97py/basic_repo.git
+   1a6d093..a6415da  master -> master
